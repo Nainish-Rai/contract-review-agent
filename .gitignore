@@ -13,3 +13,4 @@ dist
 docs/
 .DS_Store
 *.tsbuildinfo
+memory/
