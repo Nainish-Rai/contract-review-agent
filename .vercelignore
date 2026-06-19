@@ -6,3 +6,6 @@ node_modules
 .output
 .nitro
 dist
+docs/
+.agents/
+.codegraph/

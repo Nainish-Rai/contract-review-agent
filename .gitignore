@@ -1,11 +1,15 @@
 node_modules
 .env*
+!.env.example
+.agents/
 .eve
 .vercel
 .workflow-data
+.codegraph/
 .next
 .output
 .nitro
 dist
+docs/
 .DS_Store
 *.tsbuildinfo
