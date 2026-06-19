@@ -9,10 +9,15 @@ import {
 export const runtime = "nodejs";
 
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
+const FORM_CONTENT_TYPES = ["multipart/form-data", "application/x-www-form-urlencoded"] as const;
 
 export async function POST(request: Request): Promise<Response> {
   try {
-    const formData = await request.formData();
+    if (!hasFormContentType(request)) {
+      return problem("Upload a contract file using multipart/form-data.", 400);
+    }
+
+    const formData = await readFormData(request);
     const file = formData.get("contract");
 
     if (!(file instanceof File)) {
@@ -39,4 +44,20 @@ export async function POST(request: Request): Promise<Response> {
 
 function problem(message: string, status: number): Response {
   return NextResponse.json({ message }, { status });
+}
+
+function hasFormContentType(request: Request): boolean {
+  const contentType = request.headers.get("content-type") ?? "";
+  return FORM_CONTENT_TYPES.some((formContentType) => contentType.includes(formContentType));
+}
+
+async function readFormData(request: Request): Promise<FormData> {
+  try {
+    return await request.formData();
+  } catch (error) {
+    if (error instanceof TypeError) {
+      throw new UnsupportedContractFileError("multipart form");
+    }
+    throw error;
+  }
 }

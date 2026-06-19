@@ -35,7 +35,7 @@ PDFParse.setWorker(`data:text/javascript;base64,${readFileSync(pdfWorkerPath, "b
 export async function extractContractText(file: File): Promise<ExtractedContract> {
   const fileType = detectFileType(file);
   const buffer = Buffer.from(await file.arrayBuffer());
-  const text = await extractByType(buffer, fileType);
+  const text = await readTextFromBuffer(buffer, fileType, file.name);
   const normalized = normalizeText(text).slice(0, MAX_TEXT_CHARS);
 
   if (normalized.length < 200) {
@@ -47,6 +47,21 @@ export async function extractContractText(file: File): Promise<ExtractedContract
     fileType,
     text: normalized,
   };
+}
+
+async function readTextFromBuffer(
+  buffer: Buffer,
+  fileType: UploadedContractFileType,
+  fileName: string,
+): Promise<string> {
+  try {
+    return await extractByType(buffer, fileType);
+  } catch (error) {
+    if (error instanceof Error) {
+      throw new EmptyContractTextError(fileName);
+    }
+    throw error;
+  }
 }
 
 function detectFileType(file: File): UploadedContractFileType {
