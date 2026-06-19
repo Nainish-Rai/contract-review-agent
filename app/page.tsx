@@ -39,7 +39,14 @@ export default function Page() {
 			"Follow-up chat on the same Eve session",
 			"Deploy to Vercel with one click",
 		],
-		image: ogImageUrl,
+		image: [
+			ogImageUrl,
+			new URL("/screens/contract-review-followup.png", siteUrl).toString(),
+		],
+		screenshot: new URL(
+			"/screens/contract-review-followup.png",
+			siteUrl,
+		).toString(),
 		keywords: siteKeywords.join(", "),
 		creator: {
 			"@type": "Person",

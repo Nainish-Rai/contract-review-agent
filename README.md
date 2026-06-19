@@ -28,6 +28,14 @@ Eve is the same framework Vercel uses to run its own agents ([vercel.com/eve](ht
 | Follow-up chat | ✅ Floating prompt input resumes the same Eve session |
 | Production-shaped | ✅ Anthropic model, evals scaffold, type-safe tools |
 
+## See it in action
+
+<p align="center">
+  <img src="./public/screens/contract-review-followup.png" alt="Contract Review Agent — negotiation points, signing tradeoffs, and follow-up chat" width="900" />
+</p>
+
+A real Eve session — numbered negotiation points (raw-material cap, force majeure, power of entry, coupon pricing, insurance, contract blanks), a Signing Tradeoffs section, and a follow-up prompt that resumes the same session. The reminder chip at the bottom tracks unresolved items across the durable conversation.
+
 ## Features
 
 ### PDF & DOCX Contract Uploads

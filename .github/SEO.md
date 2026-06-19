@@ -37,6 +37,7 @@ Full keyword brief: [`memory/research/keyword-research/2026-06-19-eve-contract-r
 | Crawl directives | [`app/robots.ts`](../app/robots.ts) | disallow `/api/` and `/eve/` |
 | Sitemap | [`app/sitemap.ts`](../app/sitemap.ts) | weekly, priority 1.0 |
 | OG / banner / favicon | [`public/og.svg`](../public/og.svg), [`public/banner.svg`](../public/banner.svg), [`public/favicon.svg`](../public/favicon.svg) | social cards |
+| Product screenshot | [`public/screens/contract-review-followup.png`](../public/screens/contract-review-followup.png) | README "See it in action" + JSON-LD `screenshot` field |
 | GitHub repo metadata | [`package.json`](../package.json) | npm keywords, description |
 | README hero | [`README.md`](../README.md) | H1, intro, deploy CTA |
 | Domain language | [`CONTEXT.md`](../CONTEXT.md) | terminology |
