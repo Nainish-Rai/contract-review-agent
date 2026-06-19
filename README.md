@@ -1,4 +1,6 @@
-<img src="./public/banner.svg" width="100%" alt="Contract Review Agent — Vercel Eve template for AI contract review" />
+<img width="1396" height="751" alt="image" src="https://github.com/user-attachments/assets/f4e44710-84f7-42a9-9ace-894b10df68b0" />
+<img width="1552" height="958" alt="image" src="https://github.com/user-attachments/assets/3a019835-ddf2-4d6e-aa40-274a2f6172be" />
+
 
 # Contract Review Agent
 
