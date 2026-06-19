@@ -1,9 +1,26 @@
 {
   "name": "contract-review-agent",
   "version": "0.0.0",
-  "description": "Open-source template for a durable contract review AI agent built with Eve, Next.js, and AI SDK Elements.",
+  "description": "Open-source Vercel Eve template for an AI contract review agent. Upload PDF/DOCX contracts, stream a tool-call risk review, and ship your own legal agent on Vercel.",
   "license": "MIT",
   "author": "Nainish Rai",
+  "homepage": "https://github.com/Nainish-Rai/contract-review-agent#readme",
+  "keywords": [
+    "vercel-eve",
+    "eve-framework",
+    "agent-template",
+    "ai-agent",
+    "ai-agents",
+    "ai-contract-review",
+    "contract-review",
+    "contract-analysis",
+    "legaltech",
+    "legal-ai",
+    "nextjs",
+    "vercel",
+    "ai-sdk",
+    "open-source"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Nainish-Rai/contract-review-agent"

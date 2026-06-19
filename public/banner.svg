@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" role="img" aria-label="Contract Review Agent — Vercel Eve template for AI contract review">
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0%" stop-color="#000000" />
+			<stop offset="100%" stop-color="#0a0a0a" />
+		</linearGradient>
+		<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+			<stop offset="0%" stop-color="#ffffff" stop-opacity="0.16" />
+			<stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
+		</linearGradient>
+	</defs>
+	<rect width="1280" height="320" fill="url(#bg)" />
+	<rect x="0" y="0" width="1280" height="320" fill="url(#accent)" />
+
+	<g transform="translate(64, 64)">
+		<rect x="0" y="0" width="56" height="56" rx="10" fill="#ffffff" />
+		<text x="28" y="40" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif" font-size="34" font-weight="800" text-anchor="middle" fill="#000000">CR</text>
+	</g>
+
+	<g transform="translate(140, 70)">
+		<text font-family="ui-sans-serif, -apple-system, system-ui, sans-serif" font-size="22" font-weight="600" fill="#9ca3af">VERCEL EVE TEMPLATE</text>
+		<text x="0" y="74" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif" font-size="68" font-weight="800" fill="#ffffff">Contract Review Agent</text>
+		<text x="0" y="120" font-family="ui-sans-serif, -apple-system, system-ui, sans-serif" font-size="24" font-weight="400" fill="#d1d5db">Open-source AI agent for PDF &amp; DOCX contract review</text>
+		<text x="0" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#9ca3af">eve &middot; next.js &middot; ai-sdk-elements &middot; vercel</text>
+	</g>
+
+	<g transform="translate(64, 240)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#9ca3af">
+		<text>git clone https://github.com/Nainish-Rai/contract-review-agent.git</text>
+	</g>
+
+	<g transform="translate(960, 80)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" fill="#9ca3af">
+		<rect x="0" y="0" width="260" height="180" rx="14" fill="#0d0d0d" stroke="#262626" />
+		<text x="16" y="34" fill="#9ca3af">agent/</text>
+		<text x="16" y="62" fill="#ffffff">instructions.md</text>
+		<text x="16" y="88" fill="#9ca3af">skills/</text>
+		<text x="32" y="112" fill="#ffffff">contract-review.md</text>
+		<text x="16" y="138" fill="#9ca3af">tools/</text>
+		<text x="32" y="162" fill="#ffffff">review_*.ts</text>
+	</g>
+</svg>
